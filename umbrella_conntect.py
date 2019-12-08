@@ -3,7 +3,9 @@
 from urllib2 import Request, urlopen
 import os, sys
 
-token = os.getenv('INVESTIGATE_TOKEN', False)
+# when in environmental varriable
+# token = os.getenv('INVESTIGATE_TOKEN', False)
+token = 'INVESTIGATE_TOKEN' 
 
 if not token:
   print "ERROR: environment variable \'INVESTIGATE_TOKEN\' not set. Invoke script with \'INVESTIGATE_TOKEN=%YourToken% python scripts.py\'"
